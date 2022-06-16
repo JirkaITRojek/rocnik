@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Výrobní vědecký balíček</title>
+</head>
+
+<body>
+    <header>
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Suroviny</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../g/index.html#iron">Železná ruda</a>
+                    <a class="dropdown-item" href="../g/index.html#med">Měděná ruda</a>
+                    <a class="dropdown-item" href="../g/index.html#coal">Uhlí</a>
+                    <a class="dropdown-item" href="../g/index.html#stone">Kámen</a>
+                    <a class="dropdown-item" href="../g/index.html#wood">Dřevo</a>
+                    <a class="dropdown-item" href="../g/index.html#steel">Ocel</a>
+                    <a class="dropdown-item" href="../g/index.html#oil">Ropa</a>
+                    <a class="dropdown-item" href="../g/index.html#oilp">Ropné produkty</a>
+                    <a class="dropdown-item" href="../g/index.html#uranium">Uranová ruda</a>
+                    <a class="dropdown-item" href="../g/index.html#energy">Elektřina</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Vědecké balíčky</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../a/index.html#automatizacni">Automatizační</a>
+                        <a class="dropdown-item" href="../a/index.html#logisticni">Logistický</a>
+                        <a class="dropdown-item" href="../b/index.html#vojensky">Vojenský</a>
+                        <a class="dropdown-item" href="../c/index.html#chemicky">Chemický</a>
+                        <a class="dropdown-item" href="../d/index.html#vyrobni">Výrobní</a>
+                        <a class="dropdown-item" href="../e/index.html#uzitek">Užitkový</a>
+                        <a class="dropdown-item" href="../f/index.html#space">Vesmírný</a>
+                    </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Odkazy</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://www.factorio.com/">Oficiální strana Factoria</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/watch?v=J8SBp4SyvLc">Trailer 2020</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/watch?v=KVvXv1Z6EY8">Trailer 2016</a>
+                    <a class="dropdown-item" href="https://store.steampowered.com/app/427520/Factorio/">Steam</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/c/Nilaus">Youtube EN Nilaus</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/c/Trupen">Youtube EN Trupen</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/c/TenSterakdary/featured">Youtube CZ Sterakdary</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="../uvod.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">Úvodní strana</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="../h/index.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">Test</a>
+            </li>
+
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        <script>
+            var triggerEl = document.querySelector('#navId a')
+            bootstrap.Tab.getInstance(triggerEl).show()
+        </script>
+        <h1>Výrobní vědecký balíček</h1>
+        
+    </header>
+    <main class="container">
+
+        <div class="okolo">
+            <div>
+                <h2 id="vyrobni">Výrobní vědecký balíček</h2>
+                <p>Výrobní balíček se podobá Logistickému balíčku protože také odemyká
+                    pokročilejší způsob přepravy pásů což jsou modré které jsou nejrychlejší, k tomu odemyká nejlepší
+                    montovnu, také obohacení uranu a moduly které mění způsob hry. K jeho výrobě máme již všechny
+                    suroviny teď jenom je spojit do produktů a poté do balíčku. Je potřeba k dokončení hry.</p>
+                <div>
+                    <h2>Ukázka výroby surovin a výroby samotného balíčku</h2>
+                    <p class="center">Obrázek ukazuje výrobu modulu produktivity první úrovně z pokročilého a elektrického obvodu</p>
+                    <a href="../img/modulprod1.png"><img class="mini" src="../img/modulprod1.png"
+                            alt="modul produktivity první úrovně"></a>
+                            <p class="center">Obrázek ukazuje výrobu kolejí a železných tyčí potřebných k jejich výrobě</p>
+                    <a href="../img/rail.png"><img class="mini" src="../img/rail.png" alt="montovny na výrobu kolejí"></a>
+                    <p class="center">Obrázek ukazuje výrobu elektrických pecí</p>
+                    <a href="../img/epm.png"><img class="mini" src="../img/epm.png" alt="montovny na výrobu elektrických pecí"></a>
+                    <p class="center">Obrázek ukazuje montovny s modulu pruduktyvity třetí úrovně na výrobu výrobního balíčku</p>
+                    <a href="../img/fialb.png"><img class="mini" src="../img/fialb.png"
+                            alt="montovny na výrobní balíček"></a>
+                            <p class="center">Obrázek ukazuje výzkumný strom výrobního balíčku</p>
+                    <a href="../img/researchfial.png"><img class="mini" src="../img/researchfial.png"
+                            alt="výzkumný strom výrobního balíčku"></a>
+                </div>
+                <div>
+                    <h2>Co vše získáte jeho výzkumem</h2>
+                    <p class="center">Obrázek ukazuje nejpokročilejší montovnu ve hře</p>
+                    <a href="../img/mont.png"><img class="mini" src="../img/mont.png"
+                            alt="Nejlepší montovna ve hře"></a>
+                            <p class="center">Obrázek ukazuje nejpokročilejší pás, podzemní pás a rozdělovač ve hře</p>
+                    <a href="../img/pas.png"><img class="mini" src="../img/pas.png"
+                            alt="pás podzemní pás a rozdělovač nejlepší úrovně"></a>
+                            <p class="center">Obrázek ukazuje obohacující proces uranu za účelem většího zisku uranu 235 k výrobě atomových zbrání</p>
+                    <a href="../img/proces.png"><img class="mini" src="../img/proces.png"
+                            alt="obrázek obohacujícího procesu uranu"></a>
+                            <p class="center">Obrázek ukazuje modul rychlosti třetí úrovně v majáku</p>
+                    <a href="../img/mr3.png"><img class="mini" src="../img/mr3.png"
+                            alt="obrázek modulu rychlosti 3 v majáku na rozšíření jeho efektu"></a>
+                            <p class="center">Obrázek ukazuje recept na zkapalnění uhlí</p>
+                    <a href="../img/coal.png"><img class="mini" src="../img/coal.png" alt="ukázka výrobního receptu na zkapalnění uhlí za účelem výroby ropných produktů"></a>
+                    <p class="center">Obrázek ukazuje co dělá maják</p>
+                    <a href="../img/majak.png"><img class="mini" src="../img/majak.png" alt=" ukázka efektů majáku"></a>
+
+                </div>
+
+
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <h3>&copy; Jiří Rojek IT1 , 2022</h3>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"
+        integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>

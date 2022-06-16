@@ -1,0 +1,72 @@
+.hlavni{
+background-color: black;
+
+}
+.center{
+    text-align: center;
+}
+img {
+    display: block;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  body{
+    background-image: url(../img/pozadi.png);
+    background-attachment: fixed;
+  }
+  h1{
+    color: wheat;
+    text-align: center;
+    font-size: 50px;
+  }
+  h2{
+    color: wheat;
+    font-size: 40px;
+  }
+  h3{
+    color: black;
+    font-size: 20px;
+    text-align: right;
+  }
+  p{
+    color: sandybrown;
+    font-size: large;
+  }
+  .okolo{
+    border-style: solid;
+  border-width: 5px;
+  color: black;
+  }
+  li a{
+    float: none;
+    display: block;
+    color: sandybrown;
+    text-align: center;
+    padding: 10px;
+    font-size: 20px;
+    text-decoration: none;
+  }
+  .mini{
+    border: 1px solid #ddd; 
+    border-radius: 4px;  
+    padding: 5px; 
+    width: 150px; 
+    height: 100px;
+    width: 100px;
+  }
+  img:hover {
+    box-shadow: 0 0 2px 1px rgba(0, 140, 186, 0.5);
+  }
+  a{
+    color: sandybrown;
+  }
+  .right{
+    text-align: left;
+  }
+  .left{
+    text-align: end;
+  }
+  ul li{
+    color: white;
+  }
