@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="cs">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <title>Suroviny</title>
+</head>
+
+<body>
+    <header>
+        <ul class="nav nav-tabs" id="navId" role="tablist">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Suroviny</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="../g/index.html#iron">Železná ruda</a>
+                    <a class="dropdown-item" href="../g/index.html#med">Měděná ruda</a>
+                    <a class="dropdown-item" href="../g/index.html#coal">Uhlí</a>
+                    <a class="dropdown-item" href="../g/index.html#stone">Kámen</a>
+                    <a class="dropdown-item" href="../g/index.html#wood">Dřevo</a>
+                    <a class="dropdown-item" href="../g/index.html#steel">Ocel</a>
+                    <a class="dropdown-item" href="../g/index.html#oil">Ropa</a>
+                    <a class="dropdown-item" href="../g/index.html#oilp">Ropné produkty</a>
+                    <a class="dropdown-item" href="../g/index.html#uranium">Uranová ruda</a>
+                    <a class="dropdown-item" href="../g/index.html#energy">Elektřina</a>
+                </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Vědecké balíčky</a>
+                    <div class="dropdown-menu">
+                        <a class="dropdown-item" href="../a/index.html#automatizacni">Automatizační</a>
+                        <a class="dropdown-item" href="../a/index.html#logisticni">Logistický</a>
+                        <a class="dropdown-item" href="../b/index.html#vojensky">Vojenský</a>
+                        <a class="dropdown-item" href="../c/index.html#chemicky">Chemický</a>
+                        <a class="dropdown-item" href="../d/index.html#vyrobni">Výrobní</a>
+                        <a class="dropdown-item" href="../e/index.html#uzitek">Užitkový</a>
+                        <a class="dropdown-item" href="../f/index.html#space">Vesmírný</a>
+                    </div>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button"
+                    aria-haspopup="true" aria-expanded="false">Odkazy</a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="https://www.factorio.com/">Oficiální strana Factoria</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/watch?v=J8SBp4SyvLc">Trailer 2020</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/watch?v=KVvXv1Z6EY8">Trailer 2016</a>
+                    <a class="dropdown-item" href="https://store.steampowered.com/app/427520/Factorio/">Steam</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/c/Nilaus">Youtube EN Nilaus</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/c/Trupen">Youtube EN Trupen</a>
+                    <a class="dropdown-item" href="https://www.youtube.com/c/TenSterakdary/featured">Youtube CZ Sterakdary</a>
+                </div>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="../uvod.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">Úvodní strana</a>
+            </li>
+            <li class="nav-item ">
+                <a class="nav-link " href="../h/index.html" role="button"
+                    aria-haspopup="true" aria-expanded="false">Test</a>
+            </li>
+
+
+        </ul>
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="tab1Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab2Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab3Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab4Id" role="tabpanel"></div>
+            <div class="tab-pane fade" id="tab5Id" role="tabpanel"></div>
+        </div>
+        <script>
+            var triggerEl = document.querySelector('#navId a')
+            bootstrap.Tab.getInstance(triggerEl).show()
+        </script>
+        <h1>Suroviny a elektřina</h1>
+
+    </header>
+    <main class="container">
+        <div class="okolo">
+            <h2 id="energy" class="center">Energie</h2>
+            <div>
+                <p class="center">Obrázek ukazuje základní výrobu elektřiny na začátku hry</p>
+                <a href="../img/energy.png"><img class="mini" src="../img/energy.png" alt="generátory energie"></a>
+
+                <p class="center">Obrázek ukazuje základní výrobu elektřiny atomovou elektrárnou s pokročilým výzkumem
+                </p>
+                <a href="../img/reactor.png"><img class="mini" src="../img/reactor.png"
+                        alt="obrázek pokročilého jaderného reaktrou s 16 jádry"></a>
+            </div>
+            <div>
+                <h2 id="iron" class="center">Železná ruda a pláty</h2>
+                <p class="center">Železná ruda se nachází různě po mapě v různě velkých ložiscích, podle nastavení hry
+                    které
+                    si
+                    vybíráte při vytváření hry si můžete nastavit bohatost, velikost a četnost ložisek. Železné pláty se
+                    používají celou hru a jsou surovinou která je nedostatková.</p>
+                <a href="../img/ng.png"><img class="mini" src="../img/ng.png" alt="obrázek nastavení surovin"></a>
+                <a href="../img/i1.png"><img class="mini" src="../img/i1.png" alt="obrázek velkého ložiska železa"></a>
+                <a href="../img/i2.png"><img class="mini" src="../img/i2.png" alt="obrázek malého ložiska železa"></a>
+                <a href="../img/nt.png"><img class="mini" src="../img/nt.png" alt="obrázek normální těžby surovin"></a>
+                <p class="center">Ukázka jak můžou vypadat pece na měděné a železné pláty</p>
+                <a href="../img/pece.png"><img class="mini" src="../img/pece.png" alt="slévárny mědi"></a>
+            </div>
+            <div>
+                <h2 id="med" class="center">Měděná ruda a pláty</h2>
+                <p class="center">Měděná ruda se nachází různě po mapě v různě velkých ložiscích, podle nastavení hry
+                    které
+                    si
+                    vybíráte při vytváření hry si můžete nastavit bohatost, velikost a četnost ložisek. Měděné pláty se
+                    používají celou hru a jsou surovinou která je nedostatková.</p>
+                <a href="../img/ng.png"><img class="mini" src="../img/ng.png" alt="obrázek nastavení surovin"></a>
+                <a href="../img/m1.png"><img class="mini" src="../img/m1.png" alt="obrázek velkého ložiska mědi"></a>
+                <a href="../img/m2.png"><img class="mini" src="../img/m2.png" alt="obrázek malého ložiska mědi"></a>
+                <a href="../img/ntm.png"><img class="mini" src="../img/ntm.png" alt="obrázek normální těžby surovin"></a>
+                <p class="center">Ukázka jak můžou vypadat pece na měděné a železné pláty</p>
+                <a href="../img/pece.png"><img class="mini" src="../img/pece.png" alt="slévárny mědi"></a>
+            </div>
+            <div>
+                <h2 id="coal" class="center">Uhlí</h2>
+                <p class="center">Uhlí se nachází různě po mapě v různě velkých ložiscích, podle nastavení hry které si
+                    vybíráte při vytváření hry si můžete nastavit bohatost, velikost a četnost ložisek. Je důležité ze
+                    začátku hry pro výrobu elektřiny později se však používá jenom pro výrobů plastů a granátů.</p>
+                <a href="../img/ng.png"><img class="mini" src="../img/ng.png" alt="obrázek nastavení surovin"></a>
+                <a href="../img/u1.png"><img class="mini" src="../img/u1.png" alt="obrázek velkého ložiska uhlí"></a>
+                <a href="../img/u2.png"><img class="mini" src="../img/u2.png" alt="obrázek malého ložiska uhlí"></a>
+                <a href="../img/ntu.png"><img class="mini" src="../img/ntu.png" alt="obrázek normální těžby surovin"></a>
+            </div>
+            <div>
+                <h2 id="stone" class="center">Kámen</h2>
+                <p class="center">Kámen se na začátku používá k stavění pecí, později může zasypávat vodní plochy a
+                    dělají se z něj kamené cihly ze kterých se vyrábí další produkty. Dá se najít nejen v normálních
+                    ložiscívh ale také v velkých kusech kamenu po mapě někdy i s uhlím. </p>
+                <a href="../img/ng.png"><img class="mini" src="../img/ng.png" alt="obrázek nastavení surovin"></a>
+                <a href="../img/k1.png"><img class="mini" src="../img/k1.png" alt="obrázek velkého ložiska kamene"></a>
+                <a href="../img/k2.png"><img class="mini" src="../img/k2.png" alt="obrázek malého ložiska kamene"></a>
+                <a href="../img/k3.png"><img class="mini" src="../img/k3.png"
+                        alt="obrázek  kamene a uhlí na mapě bez ložiska"></a>
+                <a href="../img/ntk.png"><img class="mini" src="../img/ntk.png" alt="obrázek normální těžby surovin"></a>
+            </div>
+            <div>
+                <h2 id="wood" class="center">Dřevo</h2>
+                <p class="center">Dřevo palivo ze kterého se dají stavět sloupy a bedny které se na začátku hodí, jinak
+                    úplně na nic protože jako palivo nevidává dost energie a později jsou mnohem lepší paliva taky se
+                    nepoužívá v žádných vědeckých balíčcích. Shrnutí- je potřebné jen na začátku hry jinak lesy překáží
+                    rozvoji továrny.</p>
+                <a href="../img/d1.png"><img class="mini" src="../img/d1.png" alt="obrázek lesu"></a>
+                <a href="../img/d2.png"><img class="mini" src="../img/d2.png" alt="obrázek spadlého stromu"></a>
+            </div>
+            <div>
+                <h2 id="steel" class="center">Ocel</h2>
+                <p class="center">Ocel se nenachází jako ruda ale je to přepálené železo v poměru 1 ku 10 ocel ku
+                    železný plát. Ocel se přepaluje pomalu takže stačí 1 ku 1 pecí. Je to surovina potřebná od
+                    vojenského balíku má hodně využití.</p>
+                <a href="../img/steel.png"><img class="mini" src="../img/steel.png" alt="výrobna ocele"></a>
+                <a href="../img/op.png"><img class="mini" src="../img/op.png"
+                        alt="výrobna ocele s elektrickou pecí"></a>
+            </div>
+            <div>
+                <h2 id="oil" class="center">Ropa</h2>
+                <p class="center">Ropa je další základní surovina používaná od chemického balíčku a dále netěží se
+                    těžícím zařízením ale ropným čerpadlem na ropných ložiscích což vypadjí jako skvrny.</p>
+                <a href="../img/ng.png"><img class="mini" src="../img/ng.png" alt="obrázek nastavení surovin"></a>
+                <a href="../img/r1.png"><img class="mini" src="../img/r1.png" alt="obrázek velkého ložiska ropy"></a>
+                <a href="../img/r2.png"><img class="mini" src="../img/r2.png" alt="obrázek malého ložiska ropy"></a>
+                <a href="../img/ropa.png"><img class="mini" src="../img/ropa.png" alt="obrázek  těžby ropy"></a>
+            </div>
+            <div>
+                <h2 id="oilp" class="center">Ropné produkty</h2>
+                <p class="center">Ropné produkty jsou celkově 3 nejdůležitějším a nejvíce použivaným je ropný plyn který
+                    se užívá k výrobě plastu a síry a dalšího. Dále je lehký a těžký olej tyhle se odemykají až po
+                    výzkumu s chemickým balíkem, dále se dá vyrobit těžký a lehrý olej společně s ropným plynem z uhlí
+                    po výzkumu s výrobním balíkem. Lehký olej se pužívá k výrobě raketového paliva ale stejně jak těžký
+                    olej a ropný plyn se dá použít k výrobě tuhého paliva lepší něž uhlí. Těžký olej se používá k výrobě
+                    maziva které se dál používá na výrobu produktů potřebných k výrobě výrobního balíku. </p>
+                <a href="../img/oil.png"><img class="mini" src="../img/oil.png"
+                        alt="obrázek základního spracování ropy"></a>
+                <a href="../img/rp.png"><img class="mini" src="../img/rp.png" alt="obrázek skladiště ropného plynu"></a>
+                <a href="../img/oil2.png"><img class="mini" src="../img/oil2.png"
+                        alt="obrázek pokročilého zpracování ropy"></a>
+                <a href="../img/lo.png"><img class="mini" src="../img/lo.png" alt="obrázek skladiště lehkého oleje"></a>
+                <a href="../img/to.png"><img class="mini" src="../img/to.png" alt="obrázek skladiště těžkého oleje"></a>
+            </div>
+            <div>
+                <h2 id="uranium" class="center">Uranová ruda</h2>
+                <p class="center">Uranová ruda není nutna k dohrání hry, ale je to skvělý zdroj energie kterému se nic
+                    nevyrovná a taky se z ní dají dělat zbraně které udělují velká zranění nepřítely. K jejímu těžení je
+                    potřeba kyselina sírová vyráběna z produktů ropného plynu takže se k jaderné energii dostanete až
+                    kolem středu hry kdy vám přestane stíhat malé množství parních generátorů. Navíc je třeba zpracovat
+                    v odstředivkách na uran 238 a uran 235, poměr spotřeby reaktoru k odstředivce která se nezastaví je 1 ku 1.
+                </p>
+                <a href="../img/ng.png"><img class="mini" src="../img/ng.png" alt="obrázek nastavení surovin"></a>
+                <a href="../img/uran1.png"><img class="mini" src="../img/uran1.png"
+                        alt="obrázek velkého ložiska uranu"></a>
+                <a href="../img/uran2.png"><img class="mini" src="../img/uran2.png"
+                        alt="obrázek malého ložiska uranu"></a>
+                        <a href="../img/ut.png"><img class="mini" src="../img/ut.png"
+                            alt="obrázek těžby uranu"></a>
+                <a href="../img/uran.png"><img class="mini" src="../img/uran.png" alt="odstředivky na uran"></a>
+            </div>
+        </div>
+    </main>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/holder/2.9.8/holder.min.js"
+        integrity="sha512-O6R6IBONpEcZVYJAmSC+20vdsM07uFuGjFf0n/Zthm8sOFW+lAq/OK1WOL8vk93GBDxtMIy6ocbj6lduyeLuqQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</body>
+
+</html>
